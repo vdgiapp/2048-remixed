@@ -6,8 +6,6 @@
 **2048 Remixed** là phiên bản mở rộng của trò chơi 2048 kinh điển, với nhiều chế độ chơi sáng tạo và độc đáo! Trò chơi không chỉ dừng lại ở việc hợp ô, mà là một cuộc hành trình qua các biến thể đầy thử thách, từ cổ điển đến hỗn loạn, từ chiến thuật đến tốc độ.
 
 ---
----
----
 
 ### **CÔNG NGHỆ**
 - **Engine**: Unity 2022.3.62f1
@@ -17,15 +15,11 @@
 - Âm thanh, hiệu ứng, và hỗ trợ controller (nếu có)
 
 ---
----
----
 
 ### **TÍNH NĂNG**
 - **Tùy chỉnh người chơi** - cho phép người chơi tùy chỉnh giao diện của mình, từ màu, background, hình ảnh, âm thanh...
 - **More in future...**
 
----
----
 ---
 
 ### **PHÁT TRIỂN**
@@ -36,8 +30,6 @@
 - Thêm hệ thống **chế độ yêu thích**.
 - Thêm hệ thống **chế độ tùy chỉnh**, cho phép người dùng sử dụng chế độ của người khác tải lên hoặc tải lên chế độ...
 
----
----
 ---
 
 ### **CHẾ ĐỘ CHƠI (WIP)**
@@ -50,7 +42,5 @@
 - **Kết hợp** - kết hợp 2 hoặc nhiều chế độ với nhau, tăng độ khó của trò chơi để thử thách bản thân hơn!
 - **Tùy chỉnh** - tạo ra chế độ chơi riêng của bạn (in future).
 
----
----
 ---
 *Made with 💙 from the love of puzzle games.*

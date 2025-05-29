@@ -6,8 +6,6 @@
 **2048 Remixed** is an expanded reimagination of the classic 2048 game, featuring a variety of creative and challenging game modes! This is not just about merging tiles — it's a journey through chaotic, strategic, and fast-paced variations.
 
 ---
----
----
 
 ### **TECHNOLOGY**
 - **Engine**: Unity 2022.3.62f1
@@ -17,15 +15,11 @@
 - Sound, visual effects, and controller support (if applicable)
 
 ---
----
----
 
 ### **FEATURES**
 - **Player customization** – change tile color, background, images, sounds, and more.
 - **More in future...**
 
----
----
 ---
 
 ### **DEVELOPMENT ROADMAP**
@@ -37,8 +31,6 @@
 - Add **custom mode system**, where players can share, download, or upload their own game modes.
 
 ---
----
----
 
 ### **GAME MODES (WIP)**
 
@@ -49,7 +41,6 @@
 - **Chaos** – random challenges such as tile swapping, disappearing tiles, changing gravity, and more increase the difficulty.
 - **Mixed** – combine two or more modes for a real challenge!
 - **Custom** – create and play your own unique game modes (planned for future).
----
----
+
 ---
 *Made with 💙 from the love of puzzle games.*
