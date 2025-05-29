@@ -1,5 +1,5 @@
 
-| **[English](./README.md)** | **Tiếng Việt** |
+| [English](./README.md) | **Tiếng Việt** |
 
 # **2048 REMIXED**
 
