@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
+using Remixed2048.MergeRule;
 
-public abstract class BaseGameMode : ScriptableObject
+namespace Remixed2048.GameMode
 {
-    /// <summary>
-    /// Mảng gồm nhiều BaseMergeRule
-    /// </summary>
-    public BaseMergeRule[] mergeRules;
+    public abstract class BaseGameMode : ScriptableObject
+    {
+        /// <summary>
+        /// Mảng gồm nhiều BaseMergeRule
+        /// </summary>
+        public BaseMergeRule[] mergeRules;
+    }
 }

@@ -25,10 +25,9 @@
 ### **PHÁT TRIỂN**
 - **Kết nối với store**, cho phép người chơi kết nối với App Store hoặc Google Play hoặc sử dụng Facebook để lưu dữ liệu.
 - Thêm hệ thống **hồ sơ người chơi**.
-- Thêm hệ thống **bảng xếp hạng cho từng chế độ chơi**.
-- Thêm hệ thống **multiplayer** (giao hữu, xếp hạng, luyện tập,...). Mỗi người chơi sẽ quyết định chế độ chơi với nhau.
+- Thêm hệ thống **bảng xếp hạng** cho từng chế độ chơi.
 - Thêm hệ thống **chế độ yêu thích**.
-- Thêm hệ thống **chế độ tùy chỉnh**, cho phép người dùng sử dụng chế độ của người khác tải lên hoặc tải lên chế độ...
+- Thêm hệ thống **chế độ tùy chỉnh**
 
 ---
 
@@ -38,6 +37,7 @@
 - **Tiêu chuẩn** - cũng giống như chế độ cổ điển nhưng có các power với số lượng giới hạn, có thể nhận thêm power bằng các cách khác nhau.
 - **Trọng lực** - tất cả các ô sẽ bị kéo về 1 hướng tùy theo trọng lực thay đổi.
 - **Theo lượt** - giới hạn lượt đi, phải tính toán cực kỳ kỹ để nhận thêm lượt đi theo các cách khác nhau.
+- **Cân bằng nguyên tố** - cân bằng giữa 2 hoặc nhiều nguyên tố với nhau tùy vào cách người chơi chọn.
 - **Hỗn loạn** - các thử thách sẽ được báo trước như ô bị đổi ngẫu nhiên, ô bị mất, xuất hiện trọng lực hoặc thay đổi trọng lực,... sẽ xuất hiện ngẫu nhiên, tăng độ khó cho trò chơi.
 - **Kết hợp** - kết hợp 2 hoặc nhiều chế độ với nhau, tăng độ khó của trò chơi để thử thách bản thân hơn!
 - **Tùy chỉnh** - tạo ra chế độ chơi riêng của bạn (in future).

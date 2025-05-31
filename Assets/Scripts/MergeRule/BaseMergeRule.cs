@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
-public abstract class BaseMergeRule : ScriptableObject
+namespace Remixed2048.MergeRule
 {
-    
+    public abstract class BaseMergeRule : ScriptableObject
+    {
+
+    }
 }

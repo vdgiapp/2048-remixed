@@ -26,9 +26,8 @@
 - **Store integration** – connect with App Store, Google Play, or Facebook for data saving.
 - Add a **player profile system**.
 - Add **leaderboards** for each game mode.
-- Add **multiplayer system** – support for friendly matches, ranked games, practice modes. Players can choose the game mode to compete in.
 - Add **favorite mode system**.
-- Add **custom mode system**, where players can share, download, or upload their own game modes.
+- Add **custom mode system**
 
 ---
 
@@ -38,6 +37,7 @@
 - **Standard** – similar to classic, but introduces limited-use powers that can be earned through various ways.
 - **Gravity** – all tiles are pulled in a certain direction based on shifting gravity.
 - **Turn-Based** – limited number of moves; plan carefully to earn more turns through special conditions.
+- **Elemental Balance** - balance 2 or more elements together depending on how the player chooses.
 - **Chaos** – random challenges such as tile swapping, disappearing tiles, changing gravity, and more increase the difficulty.
 - **Mixed** – combine two or more modes for a real challenge!
 - **Custom** – create and play your own unique game modes (planned for future).
