@@ -8,8 +8,19 @@
 ---
 
 ### **TECHNOLOGY**
-- **Engine**: Unity 2022.3.62f1
+- **Tools**: Unity 2022.3.62f1 - C#
+- **Packages**:
+    + URP 2D
+    + Addressable
+    + TextMesh Pro
+    + New Input System
+    + ...
 - **Platforms**: PC, Mobile
+- **Plugins**:
+    + FastScriptReload
+    + NaughtyAttributes
+    + PrimeTween
+    + UniTask
 - Custom UI/UX
 - Modular game mode system
 - Sound, visual effects, and controller support (if applicable)

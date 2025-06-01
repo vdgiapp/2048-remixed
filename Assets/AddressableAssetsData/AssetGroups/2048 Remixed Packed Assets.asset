@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: 2048 Remixed Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: 2048 Remixed Packed Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 740c9a7ebc9f57e448c74dffd6dcacf4
+  m_SerializeEntries:
+  - m_GUID: 3fd8d244f0bdec047b1aaa61ff80b2ce
+    m_Address: Assets/RawAssets/Prefabs/2048RemixedGlobal.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c7bf40816c4fee2439a7a9260a6c6bc4, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d2e51a2638d554848a95811a0249d6e3, type: 2}
+    - {fileID: 11400000, guid: bbed2e54d94846c409d4f43cc08af9fb, type: 2}

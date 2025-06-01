@@ -6,46 +6,50 @@ namespace Remixed2048.Input
 {
     public class InputManager : MonoSingleton<InputManager>
     {
-        public event Action<Vector2> OnPlayerSwipe;
+        public event Action<SwipeDirection> swiped;
         
         [SerializeField]
         private float minimumSwipeMagnitude = 15f;
         
-        private Vector2 _swipeDirection;
+        private Vector2 _swipeDirection = Vector2.zero;
+        
+        // Player controls
         private PlayerControls _playerControls;
+        private PlayerControls.MainActions _mainActions;
 
-        private void Start()
+        protected override void Awake()
         {
+            base.Awake();
             _playerControls = new PlayerControls();
-            _playerControls.Main.Enable();
+            _mainActions = _playerControls.Main;
+            _mainActions.Enable();
             ConnectSignals();
         }
         
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
             DisconnectSignals();
+            base.OnDestroy();
         }
 
         private void ConnectSignals()
         {
-            var main = _playerControls.Main;
-            main.Touch.canceled += OnTouchCanceled;
-            main.Swipe.performed += OnSwipePerformed;
-            main.Up.performed += OnKeyboardUp;
-            main.Down.performed += OnKeyboardDown;
-            main.Left.performed += OnKeyboardLeft;
-            main.Right.performed += OnKeyboardRight;
+            _mainActions.Swipe.performed += OnSwipePerformed;
+            _mainActions.Touch.canceled += OnTouchCanceled;
+            _mainActions.Up.performed += OnKeyboardUp;
+            _mainActions.Down.performed += OnKeyboardDown;
+            _mainActions.Left.performed += OnKeyboardLeft;
+            _mainActions.Right.performed += OnKeyboardRight;
         }
 
         private void DisconnectSignals()
         {
-            var main = _playerControls.Main;
-            main.Touch.canceled -= OnTouchCanceled;
-            main.Swipe.performed -= OnSwipePerformed;
-            main.Up.performed -= OnKeyboardUp;
-            main.Down.performed -= OnKeyboardDown;
-            main.Left.performed -= OnKeyboardLeft;
-            main.Right.performed -= OnKeyboardRight;
+            _mainActions.Swipe.performed -= OnSwipePerformed;
+            _mainActions.Touch.canceled -= OnTouchCanceled;
+            _mainActions.Up.performed -= OnKeyboardUp;
+            _mainActions.Down.performed -= OnKeyboardDown;
+            _mainActions.Left.performed -= OnKeyboardLeft;
+            _mainActions.Right.performed -= OnKeyboardRight;
         }
 
         private void OnSwipePerformed(InputAction.CallbackContext context)
@@ -55,24 +59,30 @@ namespace Remixed2048.Input
 
         private void OnTouchCanceled(InputAction.CallbackContext context)
         {
-            float magnitude = Mathf.Abs(_swipeDirection.magnitude);
+            float magnitude = _swipeDirection.magnitude;
             if (magnitude < minimumSwipeMagnitude) return;
  
-            // Determine dominant axis
             Vector2 dir = _swipeDirection.normalized;
-            OnPlayerSwipe?.Invoke(dir * magnitude);
+            SwipeDirection swipeDir;
+
+            if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
+                swipeDir = dir.x > 0 ? SwipeDirection.Right : SwipeDirection.Left;
+            else
+                swipeDir = dir.y > 0 ? SwipeDirection.Up : SwipeDirection.Down;
+
+            swiped?.Invoke(swipeDir);
         }
         
         private void OnKeyboardUp(InputAction.CallbackContext context) =>
-            OnPlayerSwipe?.Invoke(new Vector2(0, 1));
+            swiped?.Invoke(SwipeDirection.Up);
 
         private void OnKeyboardDown(InputAction.CallbackContext context) =>
-            OnPlayerSwipe?.Invoke(new Vector2(0, -1));
+            swiped?.Invoke(SwipeDirection.Down);
 
         private void OnKeyboardLeft(InputAction.CallbackContext context) =>
-            OnPlayerSwipe?.Invoke(new Vector2(-1, 0));
+            swiped?.Invoke(SwipeDirection.Left);
 
         private void OnKeyboardRight(InputAction.CallbackContext context) =>
-            OnPlayerSwipe?.Invoke(new Vector2(1, 0));
+            swiped?.Invoke(SwipeDirection.Right);
     }
 }
